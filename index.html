@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camera App</title>
+  <title>iPhone Camera App</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <video id="video" autoplay></video>
-  <button onclick="toggleCamera()">Toggle Camera</button>
-  <button onclick="startRecording()">Start Recording</button>
-  <button onclick="stopRecording()">Stop Recording</button>
-  <button onclick="takePicture()">Take Picture</button>
+  <div class="iphone">
+    <div class="camera-container">
+      <video id="video" autoplay></video>
+      <div class="button-bar">
+        <button onclick="toggleCamera()">Toggle</button>
+        <button onclick="startRecording()">Record</button>
+        <button onclick="stopRecording()">Stop</button>
+        <button onclick="takePicture()">Capture</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
